@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Cubias</title>
+</head>
+<h1 style="text-align: center; color: rgb(8, 20, 31;">Formulario con jQuery Validation</h1>
+
+
+    </head>
+    <body>
+      
+    
+      <style>
+        body{
+          background: rgba(16, 53, 75, 0.932);
+        }
+          label {
+              display: block;
+              margin-bottom: 5px;
+              color: rgb(8, 20, 31);
+              font-weight: 600;
+          }
+          input.error {
+              border: 1px solid red;
+          }
+          .error {
+              color: red;
+          }
+          #miFormulario {     
+    max-width: 400px; 
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(125, 162, 243, 0.8);
+    border-radius: 10px; 
+          }
+
+          .boton{
+            background: rgb(1, 1, 70) ;
+            color: aliceblue;
+            margin-top: 5px;
+            width: 150px;
+          }
+          .campo{
+            
+            margin-left: 20px;
+          }
+  
+      </style>
+  </head>
+  <body>
+   
+      <form id="miFormulario">
+        <div>
+          <div style="display: flex">
+            <div><label for="nombre" >Estudiante:</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ingrese nombre"></div>
+            <div><label for="email" class="campo">Correo electrónico:</label>
+              <input type="text" id="email" name="email" required class="campo" placeholder="Email"></div>                
+          </div>          
+          <div>
+            <div style="display: flex">
+              <div><label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required placeholder="ingrese contraseña"></div>
+              <div><label for="confirmar_password" class="campo">Confirmar Contraseña:</label>
+                <input type="password" id="confirmar_password" name="confirmar_password" 
+                required class="campo" placeholder="Confire su contraseña"></div>                
+            </div>        
+             
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" required placeholder="selecccione su edad">
+        </div>
+          
+   
+          <button type="submit" class="boton">Enviar</button>
+      </form>
+   
+      
+    </body>
+</html>
